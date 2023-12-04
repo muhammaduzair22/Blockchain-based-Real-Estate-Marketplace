@@ -6,7 +6,7 @@ const MenuItemBox = (props) => {
   const [menuItems, setmenuItems] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/Menu").then((response) => {
+    axios.get("http://localhost:3001/api/real-estate/getAllRealEstates").then((response) => {
       setmenuItems(response.data);
 
     })

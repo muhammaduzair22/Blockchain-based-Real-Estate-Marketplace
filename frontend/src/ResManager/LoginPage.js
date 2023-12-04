@@ -23,19 +23,19 @@ const LoginPage = (props) => {
       window.alert("Invalid Input")
       return false;
     }
-    await axios
-      .post("http://localhost:3001/Login", {
-        restaurantuserName: userName,
-        restaurantPassword: password,
-      })
-      .then(async (response) => {
-        doc = response.data;
-      });
+    // await axios
+    //   .post("http://localhost:3001/Login", {
+    //     restaurantuserName: userName,
+    //     restaurantPassword: password,
+    //   })
+    //   .then(async (response) => {
+    //     doc = response.data;
+    //   });
     console.log(doc);
-    if (doc.length > 0) {
+    if (doc.length == 0) {
       localStorage.setItem("IsLogedin", "TRUE");
-      console.log(doc[0].restaurantName);
-      props.onLogin(doc[0].restaurantName);
+      // console.log(doc[0].restaurantName);
+      // props.onLogin(doc[0].restaurantName);
       navigate("/restuarant");
     }
     else {

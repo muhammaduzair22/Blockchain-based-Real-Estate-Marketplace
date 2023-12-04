@@ -9,16 +9,16 @@ const Dashboard = (props) => {
   const ManageMenu = () => {
     navigate("/manageMenu");
   };
-  const click = () => {};
+  const click = () => { };
 
   return (
     <div data-testid="comp">
-      
+
       {/* <link
        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         rel="stylesheet"
       /> */}
-        { //props.rsname!=="NOTLOGINEDIN"?
+      { //props.rsname!=="NOTLOGINEDIN"?
         <div className="dashboard">
           <div className="card-header">
             <h1>{props.rsname}</h1>
@@ -29,11 +29,11 @@ const Dashboard = (props) => {
           <div className="container">
             <div className="row align-items-center">
               <DashBoardItem
-                name="Manage Menu"
+                name="Manage Property"
                 link="/manageMenu"
-                src="https://img.icons8.com/color/344/food-bar.png"
+                src="https://img.icons8.com/color/344/purchase-order.png"
               />
-              <DashBoardItem
+              {/* <DashBoardItem
                 name="Orders"
                 link="/orders"
                 src="https://img.icons8.com/color/344/purchase-order.png"
@@ -42,12 +42,12 @@ const Dashboard = (props) => {
                 name="Request Rider"
                 link="/rider"
                 src="https://img.icons8.com/color/344/motorcycle-delivery-multiple-boxes.png"
-              />
+              /> */}
             </div>
           </div>
         </div>
-       // :<h1>LOGIN FIRST</h1>
-    }
+        // :<h1>LOGIN FIRST</h1>
+      }
     </div>
   );
 };

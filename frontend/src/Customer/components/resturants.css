@@ -17,3 +17,15 @@
   font-size: 20px;
   color: black;
 }
+.btn{
+  background-color: tomato !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.btn:hover{
+  background-color: rgb(51, 182, 15)!important;
+  /* color: tomato !important; */
+  transform: scale(1.2); 
+  transition: transform .2s; /* Animation */
+
+}

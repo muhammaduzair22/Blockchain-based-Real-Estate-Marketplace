@@ -8,7 +8,7 @@ import AddItem from "./ResManager/AddItem";
 import CustomerLogin from "./Customer/screen/CustomerLogin"
 import Home from "./Customer/screen/home";
 import Menuitemsc from "./Customer/screen/menuitemsc";
-
+import RealEstatePage from "./Customer/screen/RealEstatePage"
 import Navbar from "./Customer/components/navbar";
 import Topbar from "./Customer/components/topbar";
 
@@ -68,6 +68,11 @@ function App() {
     {
       path: "/",
       element: <Home />,
+      errorElement: <h1>Error</h1>,
+    },
+    {
+      path: "/RealEstatePage/:type",
+      element: <RealEstatePage />,
       errorElement: <h1>Error</h1>,
     },
     {

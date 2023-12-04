@@ -33,11 +33,11 @@
     transition: .2s;
 }
 
-.dashboard .dashboard-item:hover {
+/* .dashboard .dashboard-item:hover {
  
     box-shadow: 0 0 40px rgba(0, 0, 0, .09);
     background:  #4FFF56;
-}
+} */
 
 /* .dashboard .dashboard-item i::after {
     position: absolute;
@@ -80,9 +80,9 @@
     transition: .3s;
 }
 
-.dashboard-item:active
+/* .dashboard-item:active
 {
     background-color: rgb(109, 255, 65);
-}
+} */
 
 
