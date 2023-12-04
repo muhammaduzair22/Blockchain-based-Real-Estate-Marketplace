@@ -7,7 +7,7 @@ const RealEstateSchema = new mongoose.Schema({
   },
   description: String,
   price: {
-    type: Number,
+    type: String,
     required: true
   },
   location: String,

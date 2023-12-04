@@ -1,0 +1,88 @@
+
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+.dashboard {
+    position: relative;
+    width: 100%;
+    height: 120%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 9px 0 0 0;
+    margin: 45px;
+    margin-top: 20px;
+    animation: slide-down 300ms ease-out forwards;
+    
+}
+
+.dashboard .dashboard-item {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 50px 30px 30px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    transition: .2s;
+}
+
+.dashboard .dashboard-item:hover {
+ 
+    box-shadow: 0 0 40px rgba(0, 0, 0, .09);
+    background:  #4FFF56;
+}
+
+/* .dashboard .dashboard-item i::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -20px;
+    left: -15px;
+    border: 3px dotted #fbaf32;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-radius: 100px;
+    transition: .3s;
+} */
+
+/* .dashboard .dashboard-item:hover i::after {
+    border: 3px ;
+    border-right: transparent;
+    border-bottom: transparent;
+} */
+
+.dashboard .dashboard-item h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.dashboard .dashboard-item a {
+    position: relative;
+    font-size: 16px;
+}
+
+.dashboard .dashboard-item a::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    bottom: 0;
+    left: calc(50% - 25px);
+    background: #fbaf32;
+    transition: .3s;
+}
+
+.dashboard-item:active
+{
+    background-color: rgb(109, 255, 65);
+}
+
+

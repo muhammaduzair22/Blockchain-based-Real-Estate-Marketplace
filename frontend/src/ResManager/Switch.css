@@ -1,0 +1,38 @@
+/* Rectangle 2 */
+
+
+
+.flex-container {
+    align-self: center;
+    
+    width: 40%;
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+.flex-item {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.open{
+width: 294px;
+height: 108px;
+background: #4FFF56;
+}
+
+.closed{
+width: 294px;
+height: 108px;
+background:#FF4E4E;
+}
+.nonActive{
+    width: 200px;
+    height: 108px;
+    background: #585858;
+    }
